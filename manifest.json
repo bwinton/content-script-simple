@@ -1,0 +1,14 @@
+{
+  "name": "Content script test",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  "description": "",
+  "permissions": ["tabs"],
+
+  "content_scripts": [
+    {"matches": ["http://localhost/*"], "js": ["content.js"]}
+  ],
+}
